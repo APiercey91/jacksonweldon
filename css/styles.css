@@ -21,7 +21,7 @@ header h1 {
 
 
 main, body {
-    background-color: 929292;
+    background-color: white;
     font-family: 'Caveat', cursive;
 }
 
@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 footer {
-    background-color:929292;
+   /* background-color:929292; */
     text-decoration: none;
     text-align: center;
     font-size: 2em;
@@ -103,7 +103,7 @@ iframe {
 
 #about {
     text-align: center;
-    background-color: 929292;   
+    /* background-color:929292; */  
 }
 
 #about h2 {
