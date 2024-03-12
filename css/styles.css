@@ -27,17 +27,18 @@ main, body {
 
 
 
-nav ul {
+
+/*nav ul {
     display: inline-block;
     list-style-type: none;
 }
 
 nav li {
     display: inline;
-    padding: 3em;
+    padding: 3em; /*original was 2em for both of these
     font-size: 3em;
 }
-
+*/
 nav a {
     text-decoration: none;
     color: black;
@@ -144,5 +145,17 @@ iframe {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+#navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 3em;
 }
 
