@@ -13,6 +13,7 @@ TODO:
 -get jackson to write about section
 -footer section on other pages
 -facebook icon
+-header links not working on mobile
 -->
 
 
@@ -23,6 +24,7 @@ TODO:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Weldon Music</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
@@ -44,7 +46,7 @@ TODO:
     -->
 
         <!--Navigation to go to different pages-->
-        <nav>
+        <nav id="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shows.html">Shows</a></li>
@@ -67,7 +69,13 @@ TODO:
     <!--Main part of home page containing the Next To Me video, and an about section-->
     <main>
         <div id="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KofNUiq8m5A" frameborder="0"
+            <!--     
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KofNUiq8m5A" frameborder="0"
+                allowfullscreen></iframe>
+            -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aiD2e4L4j9M?si=m8pLaPWgu-00gSKh"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
 
