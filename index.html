@@ -1,99 +1,70 @@
-<!--
-    Index HTML File for Jackson Weldon Music
-    Author: Alex Piercey
--->
-
-
-<!--
-TODO:
--Add a cover image to shows, contact and music
--add contact page
--add music page (containing all songs, images, and possibly lyrics)
--get images 
--get jackson to write about section
--footer section on other pages
--facebook icon
--header links not working on mobile
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackson Weldon Music</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailConfig.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <title>Jackson Weldon Music</title>
 </head>
 
-<body>
-    <header>
-        <h1>Jackson Weldon Music</h1>
+<body class="bg-gray-800 text-white">
 
-        <!--
-        <div id="current">
-            <h2>
-                "Time Worth Wasting" out now on <a href="https://open.spotify.com/album/77ZA9EEVzuKGvKX3gGYZyN" target="_blank">Spotify</a>
-                and <a href="https://music.apple.com/ca/album/time-worth-wasting-ep/1715422721" target="_blank">Apple Music</a> 
-                !
-        </h2>
-        </div>
-    -->
+    <!--Header-->
+    <div class="bg-gray-900">
+        <h1 class="font-bold text-6xl flex justify-center py-10">Jackson Weldon</h1>
 
-        <!--Navigation to go to different pages-->
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shows.html">Shows</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="music.html">Music</a></li>
-            </ul>
-        </nav>
+        <ul class="flex justify-center mt-8 text-4xl">
+            <li class="list-none inline-block px-10"><em><a href="index.html">Home</a></em></li>
+            <li class="list-none inline-block px-10"><em><a href="shows.html">Shows</a></em></li>
+            <li class="list-none inline-block px-10"><em><a href="contact.html">Contact</a></em></li>
+            <li class="list-none inline-block px-10"><em><a href="music.html">Music</a></em></li>
+        </ul>
 
-        <!--Navigation to go to the socials, using the font awesome icons-->
-        <nav id="socials">
-            <ul>
-                <li><a href="https://www.instagram.com/jacksonweldonn/" class="fa fa-instagram" target="_blank"></a>
-                </li>
-                <li><a href="https://www.youtube.com/@jacksonweldon2806" class="fa fa-youtube" target="_blank"></a></li>
-                <li><a href="" class="fa fa-facebook" target="_blank"></a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="flex text-3xl">
+            <li class="mx-4"><i class="fab fa-instagram"></i></li>
+            <li class="mx-4"><i class="fab fa-youtube"></i></li>
+            <li class="mx-4"><i class="fab fa-twitter"></i></li>
+            <li class="mx-4"><i class="fab fa-spotify"></i></li>
+            <li class="mx-4"><i class="fab fa-apple"></i></li>
+        </ul>
+    </div>
 
-    <!--Main part of home page containing the Next To Me video, and an about section-->
-    <main>
-        <div id="video-container">
-            <!--     
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KofNUiq8m5A" frameborder="0"
-                allowfullscreen></iframe>
-            -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aiD2e4L4j9M?si=m8pLaPWgu-00gSKh"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
+    <!--body div-->
+<div class="bg-cover bg-center pt-5 pb-5" style="background-image: url('./images/fieldbg.png');">
 
 
-        <div id="about">
-            <h2>About</h2>
-            <p>Jackson Weldon is a 20 year old musician based in Halifax, Nova Scotia</p>
-        </div>
 
-    </main>
+    <!--About section-->
+    <div class="my-20 text-3xl mx-10 flex justify-between">
+        <p class="mt-4 ml-4">About <br>
+        <span class="text-2xl"><em>Jackson Weldon is a 20 year old musician based in Halifax, Nova Scotia</em></span></p>
+        <img src="./images/barn.png" alt="barn" class="max-w-screen-sm mx-4 my-4">
+    </div>
 
+    <!--Listen now-->
+<div class="my-20 mx-10">
+<p class="text-center text-3xl">Listen now!</p>
 
-    <!--Footer section containg links to apple music and spotify-->
-    <footer>
-        <h3>Music</h3>
-        <a href="https://open.spotify.com/artist/6gv7lIdoIMT7znEBzpSyBZ" target="_blank">Spotify</a><br>
-        <a href="https://music.apple.com/ca/artist/jackson-weldon/1693475052" target="_blank">Apple Music</a>
-    </footer>
+<ul class="text-center mt-5 text-2xl">
+<li class="my-4 hover:text-gray-500"><a href="https://open.spotify.com/artist/6gv7lIdoIMT7znEBzpSyBZ" target="_blank">Spotify</a></li>
+<li class="my-4 hover:text-gray-500"><a href="https://music.apple.com/ca/artist/jackson-weldon/1693475052" target="_blank">Apple Music</a></li>
+</ul>
+</div>
+
+<!--Time worth wasting out now-->
+<div class="my-20 text-2xl mx-10">
+    <div class="flex justify-center items-center mb-4 max-w-screen"> <iframe width="960" height="540" src="https://www.youtube.com/embed/aiD2e4L4j9M?si=m8pLaPWgu-00gSKh"
+             title="YouTube video player" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             allowfullscreen></iframe></div>
+ </div>
+
+</div>
 
 </body>
 
