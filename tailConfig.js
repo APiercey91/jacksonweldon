@@ -1,1 +1,4 @@
-
+/*
+Config file for tailwind
+Nothing here yet
+*/
